@@ -5,22 +5,22 @@
 class CtagsLsp < Formula
   desc "LSP implementation using universal-ctags as backend"
   homepage "https://github.com/netmute/ctags-lsp"
-  version "0.9.1"
+  version "0.10.0"
 
   depends_on "universal-ctags"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/netmute/ctags-lsp/releases/download/v0.9.1/ctags-lsp_Darwin_x86_64.tar.gz"
-      sha256 "af93692e2fe54cea990a321d008f9268316833120b6ea94cdea559503dca2961"
+      url "https://github.com/netmute/ctags-lsp/releases/download/v0.10.0/ctags-lsp_Darwin_x86_64.tar.gz"
+      sha256 "b2b400180dc31125f6972604ed7a10b46b891d42955a656be5e7b75016932ef9"
 
       def install
         bin.install "ctags-lsp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/netmute/ctags-lsp/releases/download/v0.9.1/ctags-lsp_Darwin_arm64.tar.gz"
-      sha256 "121eb62c1f67b4715c2dec968113eeae44c5c105314d3d4b5f8e48e2721da507"
+      url "https://github.com/netmute/ctags-lsp/releases/download/v0.10.0/ctags-lsp_Darwin_arm64.tar.gz"
+      sha256 "5f40d9f0708812babfead807f936bfa4c35a7e28e0d9fb4f4f6747807c24bf69"
 
       def install
         bin.install "ctags-lsp"
@@ -30,15 +30,15 @@ class CtagsLsp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/netmute/ctags-lsp/releases/download/v0.9.1/ctags-lsp_Linux_x86_64.tar.gz"
-      sha256 "af369711b162978664daae900872b1995dde0f7e2e567bbe5147f1508105d033"
+      url "https://github.com/netmute/ctags-lsp/releases/download/v0.10.0/ctags-lsp_Linux_x86_64.tar.gz"
+      sha256 "294203f24d2ff9295d9069e5f2987f6bf598bc61a77c6eca8ea68b34dceddc69"
       def install
         bin.install "ctags-lsp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/netmute/ctags-lsp/releases/download/v0.9.1/ctags-lsp_Linux_arm64.tar.gz"
-      sha256 "6463aec02456e2d0209cb25bdf4f29d769a896cbcc59de99c329bf17302a0bb7"
+      url "https://github.com/netmute/ctags-lsp/releases/download/v0.10.0/ctags-lsp_Linux_arm64.tar.gz"
+      sha256 "b8020a98690ff73b627331b259ce917c14c32d333232e0123e81b0756bba5f27"
       def install
         bin.install "ctags-lsp"
       end

@@ -5,6 +5,7 @@
 class CtagsLsp < Formula
   desc "LSP implementation using universal-ctags as backend"
   homepage "https://github.com/netmute/ctags-lsp"
+  deprecate! because: "is now available from homebrew-core: brew install ctags-lsp", date: "2026-01-06"
   version "0.10.0"
 
   depends_on "universal-ctags"

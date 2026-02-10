@@ -3,7 +3,7 @@ cask "dol" do
   name "dol"
   desc "Detect dark/light mode on the CLI"
   homepage "https://github.com/netmute/dol"
-  version "0.1.2"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "dol" do
   on_macos do
     on_intel do
       url "https://github.com/netmute/dol/releases/download/v#{version}/dol_Darwin_x86_64.tar.gz"
-      sha256 "a036b959dbed22f941802bbcf274995cd01dc266472276d6e4cd48bc542a08ad"
+      sha256 "54b29b46a9afd83aa1655375c2c6d8801397f988f98504abbb530fe65a553df9"
     end
     on_arm do
       url "https://github.com/netmute/dol/releases/download/v#{version}/dol_Darwin_arm64.tar.gz"
-      sha256 "dee338b892c49bacc338f5330820956b4795656cb83c39dbe57d902cc1f5b5bf"
+      sha256 "f1bd477302ea37f5e2d320a41b9860e8c6e078999647e90af65a55f1b20a1ef2"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/netmute/dol/releases/download/v#{version}/dol_Linux_x86_64.tar.gz"
-      sha256 "f32b1313f6f4aacc741335e1ec7042c79e7ac4e3d3578beaceeaf5c9727aa9a0"
+      sha256 "58668f368d0f7548f50f6bb16f964e1227a7a2561f51b7170295ec57ed9e00c1"
     end
     on_arm do
       url "https://github.com/netmute/dol/releases/download/v#{version}/dol_Linux_arm64.tar.gz"
-      sha256 "74a1623cfdf31da41ca4364585efb4d65efed9ff103353714ba516276412508f"
+      sha256 "dbcfba9effd29c16f92620a5e4a91af5aa9df890a35e7285e464ba3fa8062109"
     end
   end
 
